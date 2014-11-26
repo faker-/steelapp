@@ -4,7 +4,7 @@
 
 1. [Overview](#overview)
 2. [Usage](#usage)
-3. [Limitations - OS compatibility, etc.](#limitations)
+3. [Limitations](#limitations)
 
 ## Overview
 
@@ -16,17 +16,17 @@ SteelApp Traffic Managers using their SOAP API.
 - Create a new user on the SteelApp management interface with appopariate rights to drain/undrain/disable/enable.
 - Add the credentails to your Hiera configuration where it fits best (node level or environment):
 
-    steelapp::username : 'drainuser'
-    steelapp::password : 'complexpassword'
-    steelapp::server   : 'steelapp1.int.example.com'
+        steelapp::username : 'drainuser'
+        steelapp::password : 'complexpassword'
+        steelapp::server   : 'steelapp1.int.example.com'
 
 You can also specify `steelapp::port` (defaults to `9090`).
 
 - You can now drain a node by calling:
 
-    steelapp::drain {'www01.int.example.com:80':
-      pool => 'My WebApp',
-    }
+        steelapp::drain {'www01.int.example.com:80':
+          pool => 'My WebApp',
+        }
 
 Note that the node must include the port!
 Both the node and pool name must be exactly specified like they appear in the SteelApp management interface.
