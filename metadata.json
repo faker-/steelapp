@@ -1,0 +1,15 @@
+{
+  "name": "faker-steelapp",
+  "version": "0.1.0",
+  "author": "faker",
+  "summary": "Drain SteelApp nodes",
+  "license": "Apache 2.0",
+  "source": "",
+  "issues_url": null,
+  "project_page": null,
+  "dependencies": [
+
+  ]
+
+}
+
