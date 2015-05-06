@@ -1,7 +1,7 @@
 {
-  "name": "faker-steelapp",
+  "name": "rmueller-steelapp",
   "version": "0.1.0",
-  "author": "faker",
+  "author": "Roman Mueller",
   "summary": "Drain SteelApp nodes",
   "license": "Apache 2.0",
   "source": "",
